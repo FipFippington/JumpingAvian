@@ -35,5 +35,6 @@ public class Avian : MonoBehaviour
     {
         anim.SetTrigger("Die");
         isDead = true;
+        GameControl.instance.BirdDied();
     }
 }

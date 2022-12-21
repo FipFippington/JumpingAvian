@@ -33,6 +33,7 @@ public class Avian : MonoBehaviour
 
     private void OnCollisionEnter2D()
     {
+        rb2d.velocity = Vector2.zero;
         anim.SetTrigger("Die");
         isDead = true;
         GameControl.instance.BirdDied();
